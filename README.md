@@ -54,6 +54,7 @@ project-root/
 ├── Dockerfile
 └── README.md
 
+
 🖥️ Run Locally (Without Docker)
 1. Install dependencies
 pip install -r requirements.txt
