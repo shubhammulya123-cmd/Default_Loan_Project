@@ -32,7 +32,7 @@ The model prioritizes **risk detection** over raw accuracy, which is appropriate
 ## 🏗️ Project Structure
 
 project-root/
-├── api/
+'''├── api/
 │ └── main.py # FastAPI application
 │
 ├── src/
@@ -51,7 +51,7 @@ project-root/
 │
 ├── requirements.txt
 ├── Dockerfile
-└── README.md
+└── README.md'''
 
 🖥️ Run Locally (Without Docker)
 1. Install dependencies
