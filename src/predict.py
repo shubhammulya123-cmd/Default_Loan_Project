@@ -11,7 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent      # → /app/src
 MODEL_DIR = BASE_DIR / "model"                  # → /app/src/model
 
 MODEL_PATH = MODEL_DIR / "model.pkl"
-FEATURE_COLUMNS = MODEL_DIR / "feature_columns.pkl"
+FEATURE_COLUMNS_PATH = MODEL_DIR / "feature_columns.pkl"
+
+FEATURE_COLUMNS = joblib.load(FEATURE_COLUMNS_PATH)
 
 def preprocess_input(input_data: dict) -> pd.DataFrame:
     df = pd.DataFrame([input_data])
