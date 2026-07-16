@@ -31,28 +31,22 @@ The model prioritizes **risk detection** over raw accuracy, which is appropriate
 
 ## 🏗️ Project Structure
 
-project-root/
-│
-├── api/
-│   └── main.py                  # FastAPI application
-│
-├── src/
-│   ├── data_ingestion.py        # Load raw data
-│   ├── data_validation.py       # Data quality checks
-│   ├── feature_engineering.py   # Feature processing
-│   ├── train.py                 # Model training
-│   ├── predict.py               # Prediction pipeline
-│   └── model/
-│       ├── model.pkl
-│       └── feature_columns.pkl
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── requirements.txt
-├── Dockerfile
-└── README.md
+api/main.py  # FastAPI application
+
+src/data_ingestion.py  # Load raw data
+src/data_validation.py  # Data quality checks
+src/feature_engineering.py  # Feature processing
+src/train.py   # Model training
+src/predict.py   # Prediction pipeline
+src/model/model.pkl
+src/model/feature_columns.pkl
+
+data/raw/Loan_Default.csv  #Raw data
+data/processed/
+
+requirements.txt
+Dockerfile
+README.md
 
 🖥️ Run Locally (Without Docker)
 1. Install dependencies
